@@ -19,7 +19,7 @@ const FeaturedProduct = () => {
             <h2 className="text-2xl lg:text-4xl font-display font-bold mb-4">
               Challenger Quiz Battle Platform
             </h2>
-            <p className="text-muted-foreground text-lg mb-8">
+            <p className="text-muted-foreground text-sm lg:text-base mb-6">
               A real-time competitive gaming platform where users battle in knowledge-based challenges. Built with WebSockets for ultra-low latency and a clean, immersive interface.
             </p>
 
