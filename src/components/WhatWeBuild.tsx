@@ -36,7 +36,7 @@ const WhatWeBuild = () => {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-xl border border-border bg-card p-6 glow-card"
+              className="group rounded-xl border border-border bg-card p-4 lg:p-5 glow-card"
             >
               <div className="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center mb-5">
                 <service.icon className="text-white" size={22} />
