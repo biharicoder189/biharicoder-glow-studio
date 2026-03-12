@@ -32,7 +32,7 @@ const projects = [
 
 const SelectedWorks = () => {
   return (
-    <section id="projects" className="py-28 lg:py-36">
+    <section id="projects" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
         <div className="flex items-end justify-between mb-16">
           <div>
