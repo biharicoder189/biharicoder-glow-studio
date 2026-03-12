@@ -29,7 +29,7 @@ const solutions = [
 
 const ExpertSolutions = () => {
   return (
-    <section id="services" className="py-28 lg:py-36">
+    <section id="services" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-display font-bold mb-4">Expert Solutions</h2>
