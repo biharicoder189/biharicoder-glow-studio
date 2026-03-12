@@ -27,24 +27,24 @@ const WhatWeBuild = () => {
   return (
     <section id="about" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-display font-bold mb-4">What We Build</h2>
-          <p className="text-muted-foreground text-lg">Crafting digital experiences with precision and scale.</p>
+        <div className="text-center mb-10">
+          <h2 className="text-2xl lg:text-4xl font-display font-bold mb-3">What We Build</h2>
+          <p className="text-muted-foreground text-sm lg:text-base">Crafting digital experiences with precision and scale.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           {services.map((service) => (
             <div
               key={service.title}
               className="group rounded-xl border border-border bg-card p-4 lg:p-5 glow-card"
             >
-              <div className="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center mb-5">
-                <service.icon className="text-white" size={22} />
+              <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center mb-3">
+                <service.icon className="text-white" size={18} />
               </div>
-              <h3 className="text-lg font-display font-semibold mb-3">{service.title}</h3>
-              <ul className="space-y-2">
+              <h3 className="text-base font-display font-semibold mb-2">{service.title}</h3>
+              <ul className="space-y-1.5">
                 {service.features.map((f) => (
-                  <li key={f} className="text-sm text-muted-foreground flex items-start gap-2">
+                  <li key={f} className="text-xs text-muted-foreground flex items-start gap-2">
                     <span className="text-primary mt-0.5">•</span> {f}
                   </li>
                 ))}
