@@ -11,7 +11,7 @@ const features = [
 
 const FeaturedProduct = () => {
   return (
-    <section className="py-28 lg:py-36">
+    <section className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
         <p className="text-sm text-primary font-medium mb-4 tracking-widest uppercase">Featured Product</p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
