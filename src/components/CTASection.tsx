@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section id="contact" className="py-28 lg:py-36">
+    <section id="contact" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
         <div className="relative rounded-3xl overflow-hidden p-12 lg:p-20 text-center">
           {/* Gradient background */}
