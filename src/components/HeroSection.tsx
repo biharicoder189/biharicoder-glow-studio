@@ -21,7 +21,7 @@ const HeroSection = () => {
           <span className="gradient-text">AI Systems,</span> and Scalable SaaS Products.
         </h1>
 
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
+        <p className="text-base text-muted-foreground max-w-xl mx-auto mb-8">
           Biharicoder is a digital product studio helping startups and businesses build powerful software and automation systems.
         </p>
 
