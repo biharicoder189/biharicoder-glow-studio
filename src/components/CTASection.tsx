@@ -10,7 +10,7 @@ const CTASection = () => {
           <div className="absolute inset-0 bg-background/30" />
 
           <div className="relative z-10">
-            <h2 className="text-3xl lg:text-5xl font-display font-bold mb-4">
+            <h2 className="text-2xl lg:text-4xl font-display font-bold mb-3">
               Have an idea for your{" "}
               <span className="gradient-text">next startup?</span>
             </h2>

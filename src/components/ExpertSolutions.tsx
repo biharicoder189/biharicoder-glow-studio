@@ -40,7 +40,7 @@ const ExpertSolutions = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {solutions.map((sol) => (
-            <div key={sol.title} className="rounded-xl border border-border bg-card p-8 glow-card">
+            <div key={sol.title} className="rounded-xl border border-border bg-card p-5 lg:p-6 glow-card">
               <div className="flex items-center gap-3 mb-4">
                 <sol.icon size={20} className="text-primary" />
                 <h3 className="text-xl font-display font-semibold">{sol.title}</h3>

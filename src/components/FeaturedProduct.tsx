@@ -23,7 +23,7 @@ const FeaturedProduct = () => {
               A real-time competitive gaming platform where users battle in knowledge-based challenges. Built with WebSockets for ultra-low latency and a clean, immersive interface.
             </p>
 
-            <div className="space-y-4 mb-10">
+            <div className="space-y-3 mb-6">
               {features.map((f) => (
                 <div key={f.text} className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center">

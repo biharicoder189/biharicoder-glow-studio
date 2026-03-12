@@ -25,7 +25,7 @@ const HeroSection = () => {
           Biharicoder is a digital product studio helping startups and businesses build powerful software and automation systems.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
           <Button variant="gradient" size="lg" className="text-base px-8">
             Start a Project
           </Button>

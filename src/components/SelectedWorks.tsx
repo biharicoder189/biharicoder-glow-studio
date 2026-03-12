@@ -58,7 +58,7 @@ const SelectedWorks = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-4">
                 <span className="text-xs text-primary font-medium uppercase tracking-wider">{project.tag}</span>
                 <h3 className="text-lg font-display font-semibold mt-1">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
