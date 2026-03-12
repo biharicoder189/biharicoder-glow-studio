@@ -16,7 +16,7 @@ const FeaturedProduct = () => {
         <p className="text-sm text-primary font-medium mb-4 tracking-widest uppercase">Featured Product</p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl lg:text-5xl font-display font-bold mb-6">
+            <h2 className="text-2xl lg:text-4xl font-display font-bold mb-4">
               Challenger Quiz Battle Platform
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
