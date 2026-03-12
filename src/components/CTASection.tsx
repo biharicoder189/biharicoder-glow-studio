@@ -4,7 +4,7 @@ const CTASection = () => {
   return (
     <section id="contact" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="relative rounded-3xl overflow-hidden p-12 lg:p-20 text-center">
+        <div className="relative rounded-2xl overflow-hidden p-8 lg:p-14 text-center">
           {/* Gradient background */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-accent/60 to-primary/40" />
           <div className="absolute inset-0 bg-background/30" />
