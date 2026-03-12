@@ -15,7 +15,7 @@ const HeroSection = () => {
           ✦ Your technology partner for the future
         </p>
 
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-extrabold leading-tight tracking-tight max-w-5xl mx-auto mb-6">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-display font-extrabold leading-tight tracking-tight max-w-4xl mx-auto mb-4">
           We Build Modern{" "}
           <span className="gradient-text">Web Platforms,</span>{" "}
           <span className="gradient-text">AI Systems,</span> and Scalable SaaS Products.
