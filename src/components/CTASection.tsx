@@ -2,15 +2,15 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section id="contact" className="py-28 lg:py-36">
+    <section id="contact" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="relative rounded-3xl overflow-hidden p-12 lg:p-20 text-center">
+        <div className="relative rounded-2xl overflow-hidden p-8 lg:p-14 text-center">
           {/* Gradient background */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-accent/60 to-primary/40" />
           <div className="absolute inset-0 bg-background/30" />
 
           <div className="relative z-10">
-            <h2 className="text-3xl lg:text-5xl font-display font-bold mb-4">
+            <h2 className="text-2xl lg:text-4xl font-display font-bold mb-3">
               Have an idea for your{" "}
               <span className="gradient-text">next startup?</span>
             </h2>

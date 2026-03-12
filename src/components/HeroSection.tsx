@@ -4,7 +4,7 @@ const techBadges = ["Node.js", "Next.js", "AI Systems", "SaaS", "Cloud"];
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+    <section id="home" className="relative min-h-[80vh] lg:min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[600px] h-[600px] rounded-full bg-gradient-to-br from-primary/20 to-accent/10 blur-[120px]" />
@@ -15,17 +15,17 @@ const HeroSection = () => {
           ✦ Your technology partner for the future
         </p>
 
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-extrabold leading-tight tracking-tight max-w-5xl mx-auto mb-6">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-display font-extrabold leading-tight tracking-tight max-w-4xl mx-auto mb-4">
           We Build Modern{" "}
           <span className="gradient-text">Web Platforms,</span>{" "}
           <span className="gradient-text">AI Systems,</span> and Scalable SaaS Products.
         </h1>
 
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
+        <p className="text-base text-muted-foreground max-w-xl mx-auto mb-8">
           Biharicoder is a digital product studio helping startups and businesses build powerful software and automation systems.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
           <Button variant="gradient" size="lg" className="text-base px-8">
             Start a Project
           </Button>

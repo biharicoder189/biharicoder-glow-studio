@@ -4,47 +4,27 @@ import projectTracker from "@/assets/project-tracker.jpg";
 import projectAnalytics from "@/assets/project-analytics.jpg";
 
 const projects = [
-  {
-    image: projectChallenger,
-    tag: "Web App",
-    title: "Challenger Quiz Platform",
-    description: "Real-time quiz battles",
-  },
-  {
-    image: projectResume,
-    tag: "AI Tool",
-    title: "AI Resume Analyzer",
-    description: "Smart resume screening",
-  },
-  {
-    image: projectTracker,
-    tag: "SaaS",
-    title: "Employee In-Out Tracker",
-    description: "Team attendance management",
-  },
-  {
-    image: projectAnalytics,
-    tag: "Dashboard",
-    title: "Automation Dashboard",
-    description: "Business analytics",
-  },
+  { image: projectChallenger, tag: "Web App", title: "Challenger Quiz Platform", description: "Real-time quiz battles" },
+  { image: projectResume, tag: "AI Tool", title: "AI Resume Analyzer", description: "Smart resume screening" },
+  { image: projectTracker, tag: "SaaS", title: "Employee In-Out Tracker", description: "Team attendance management" },
+  { image: projectAnalytics, tag: "Dashboard", title: "Automation Dashboard", description: "Business analytics" },
 ];
 
 const SelectedWorks = () => {
   return (
-    <section id="projects" className="py-28 lg:py-36">
+    <section id="projects" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="flex items-end justify-between mb-16">
+        <div className="flex items-end justify-between mb-10">
           <div>
-            <h2 className="text-3xl lg:text-5xl font-display font-bold mb-4">Selected Works</h2>
-            <p className="text-muted-foreground text-lg">A showcase of our recent digital crafts.</p>
+            <h2 className="text-2xl lg:text-4xl font-display font-bold mb-3">Selected Works</h2>
+            <p className="text-muted-foreground text-sm lg:text-base">A showcase of our recent digital crafts.</p>
           </div>
           <a href="#projects" className="hidden md:inline-flex text-sm text-primary hover:underline">
             View all projects →
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
           {projects.map((project) => (
             <div
               key={project.title}
@@ -58,10 +38,10 @@ const SelectedWorks = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-4">
                 <span className="text-xs text-primary font-medium uppercase tracking-wider">{project.tag}</span>
-                <h3 className="text-lg font-display font-semibold mt-1">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
+                <h3 className="text-base font-display font-semibold mt-1">{project.title}</h3>
+                <p className="text-xs text-muted-foreground mt-1">{project.description}</p>
               </div>
             </div>
           ))}

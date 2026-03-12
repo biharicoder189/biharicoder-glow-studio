@@ -20,21 +20,21 @@ const reasons = [
 
 const WhyChoose = () => {
   return (
-    <section className="py-28 lg:py-36">
+    <section className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-display font-bold mb-4">Why Choose Biharicoder</h2>
-          <p className="text-muted-foreground text-lg">Excellence in every line of code we ship.</p>
+        <div className="text-center mb-10">
+          <h2 className="text-2xl lg:text-4xl font-display font-bold mb-3">Why Choose Biharicoder</h2>
+          <p className="text-muted-foreground text-sm lg:text-base">Excellence in every line of code we ship.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
           {reasons.map((reason) => (
-            <div key={reason.title} className="rounded-xl border border-border bg-card p-8 text-center glow-card">
-              <div className="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center mx-auto mb-6">
-                <reason.icon className="text-white" size={24} />
+            <div key={reason.title} className="rounded-xl border border-border bg-card p-5 lg:p-6 text-center glow-card">
+              <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center mx-auto mb-4">
+                <reason.icon className="text-white" size={22} />
               </div>
-              <h3 className="text-xl font-display font-semibold mb-3">{reason.title}</h3>
-              <p className="text-sm text-muted-foreground">{reason.description}</p>
+              <h3 className="text-lg font-display font-semibold mb-2">{reason.title}</h3>
+              <p className="text-xs lg:text-sm text-muted-foreground">{reason.description}</p>
             </div>
           ))}
         </div>

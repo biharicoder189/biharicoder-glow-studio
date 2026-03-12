@@ -11,19 +11,19 @@ const features = [
 
 const FeaturedProduct = () => {
   return (
-    <section className="py-28 lg:py-36">
+    <section className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
         <p className="text-sm text-primary font-medium mb-4 tracking-widest uppercase">Featured Product</p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl lg:text-5xl font-display font-bold mb-6">
+            <h2 className="text-2xl lg:text-4xl font-display font-bold mb-4">
               Challenger Quiz Battle Platform
             </h2>
-            <p className="text-muted-foreground text-lg mb-8">
+            <p className="text-muted-foreground text-sm lg:text-base mb-6">
               A real-time competitive gaming platform where users battle in knowledge-based challenges. Built with WebSockets for ultra-low latency and a clean, immersive interface.
             </p>
 
-            <div className="space-y-4 mb-10">
+            <div className="space-y-3 mb-6">
               {features.map((f) => (
                 <div key={f.text} className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center">
