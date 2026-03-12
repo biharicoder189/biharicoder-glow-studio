@@ -4,7 +4,7 @@ const techBadges = ["Node.js", "Next.js", "AI Systems", "SaaS", "Cloud"];
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+    <section id="home" className="relative min-h-[80vh] lg:min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[600px] h-[600px] rounded-full bg-gradient-to-br from-primary/20 to-accent/10 blur-[120px]" />
