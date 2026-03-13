@@ -1,4 +1,5 @@
 import { Gauge, Brain, Rocket } from "lucide-react";
+import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 
 const reasons = [
   {
@@ -22,22 +23,24 @@ const WhyChoose = () => {
   return (
     <section className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
+        <ScrollReveal className="text-center mb-10">
           <h2 className="text-2xl lg:text-4xl font-display font-bold mb-3">Why Choose Biharicoder</h2>
           <p className="text-muted-foreground text-sm lg:text-base">Excellence in every line of code we ship.</p>
-        </div>
+        </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6" staggerDelay={0.15}>
           {reasons.map((reason) => (
-            <div key={reason.title} className="rounded-xl border border-border bg-card p-5 lg:p-6 text-center glow-card">
-              <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center mx-auto mb-4">
-                <reason.icon className="text-white" size={22} />
+            <StaggerItem key={reason.title}>
+              <div className="rounded-xl border border-border bg-card p-5 lg:p-6 text-center glow-card">
+                <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center mx-auto mb-4">
+                  <reason.icon className="text-white" size={22} />
+                </div>
+                <h3 className="text-lg font-display font-semibold mb-2">{reason.title}</h3>
+                <p className="text-xs lg:text-sm text-muted-foreground">{reason.description}</p>
               </div>
-              <h3 className="text-lg font-display font-semibold mb-2">{reason.title}</h3>
-              <p className="text-xs lg:text-sm text-muted-foreground">{reason.description}</p>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );

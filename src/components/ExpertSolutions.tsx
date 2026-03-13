@@ -1,4 +1,5 @@
 import { Monitor, Bot, Server, Workflow } from "lucide-react";
+import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 
 const solutions = [
   {
@@ -31,31 +32,33 @@ const ExpertSolutions = () => {
   return (
     <section id="services" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
+        <ScrollReveal className="text-center mb-10">
           <h2 className="text-2xl lg:text-4xl font-display font-bold mb-3">Expert Solutions</h2>
           <p className="text-muted-foreground text-sm lg:text-base max-w-2xl mx-auto">
             We offer specialized services to help your business thrive in the modern digital landscape.
           </p>
-        </div>
+        </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6" staggerDelay={0.15}>
           {solutions.map((sol) => (
-            <div key={sol.title} className="rounded-xl border border-border bg-card p-5 lg:p-6 glow-card">
-              <div className="flex items-center gap-3 mb-3">
-                <sol.icon size={18} className="text-primary" />
-                <h3 className="text-base lg:text-lg font-display font-semibold">{sol.title}</h3>
+            <StaggerItem key={sol.title}>
+              <div className="rounded-xl border border-border bg-card p-5 lg:p-6 glow-card">
+                <div className="flex items-center gap-3 mb-3">
+                  <sol.icon size={18} className="text-primary" />
+                  <h3 className="text-base lg:text-lg font-display font-semibold">{sol.title}</h3>
+                </div>
+                <p className="text-xs lg:text-sm text-muted-foreground mb-4">{sol.description}</p>
+                <ul className="space-y-1.5">
+                  {sol.bullets.map((b) => (
+                    <li key={b} className="text-xs text-muted-foreground flex items-start gap-2">
+                      <span className="text-primary mt-0.5">•</span> {b}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <p className="text-xs lg:text-sm text-muted-foreground mb-4">{sol.description}</p>
-              <ul className="space-y-1.5">
-                {sol.bullets.map((b) => (
-                  <li key={b} className="text-xs text-muted-foreground flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span> {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
