@@ -15,7 +15,7 @@ const SelectedWorks = () => {
   return (
     <section id="projects" className="py-14 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="flex items-end justify-between mb-10">
+        <ScrollReveal className="flex items-end justify-between mb-10">
           <div>
             <h2 className="text-2xl lg:text-4xl font-display font-bold mb-3">Selected Works</h2>
             <p className="text-muted-foreground text-sm lg:text-base">A showcase of our recent digital crafts.</p>
@@ -23,30 +23,29 @@ const SelectedWorks = () => {
           <a href="#projects" className="hidden md:inline-flex text-sm text-primary hover:underline">
             View all projects →
           </a>
-        </div>
+        </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6" staggerDelay={0.12}>
           {projects.map((project) => (
-            <div
-              key={project.title}
-              className="group rounded-xl border border-border bg-card overflow-hidden glow-card cursor-pointer"
-            >
-              <div className="overflow-hidden aspect-video">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  loading="lazy"
-                />
+            <StaggerItem key={project.title}>
+              <div className="group rounded-xl border border-border bg-card overflow-hidden glow-card cursor-pointer">
+                <div className="overflow-hidden aspect-video">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-4">
+                  <span className="text-xs text-primary font-medium uppercase tracking-wider">{project.tag}</span>
+                  <h3 className="text-base font-display font-semibold mt-1">{project.title}</h3>
+                  <p className="text-xs text-muted-foreground mt-1">{project.description}</p>
+                </div>
               </div>
-              <div className="p-4">
-                <span className="text-xs text-primary font-medium uppercase tracking-wider">{project.tag}</span>
-                <h3 className="text-base font-display font-semibold mt-1">{project.title}</h3>
-                <p className="text-xs text-muted-foreground mt-1">{project.description}</p>
-              </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
