@@ -2,6 +2,7 @@ import projectChallenger from "@/assets/project-challenger.jpg";
 import projectResume from "@/assets/project-resume.jpg";
 import projectTracker from "@/assets/project-tracker.jpg";
 import projectAnalytics from "@/assets/project-analytics.jpg";
+import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 
 const projects = [
   { image: projectChallenger, tag: "Web App", title: "Challenger Quiz Platform", description: "Real-time quiz battles" },
