@@ -1,5 +1,7 @@
 import { Gauge, Brain, Rocket } from "lucide-react";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
+
+const reasons = [
   {
     icon: Gauge,
     title: "Performance First",
