@@ -17,8 +17,8 @@ const FeaturedProduct = () => {
         <ScrollReveal>
           <p className="text-sm text-primary font-medium mb-4 tracking-widest uppercase">Featured Product</p>
         </ScrollReveal>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <ScrollReveal direction="left">
+        <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-center">
+          <ScrollReveal direction="left" className="flex-1">
             <div>
               <h2 className="text-2xl lg:text-4xl font-display font-bold mb-4">
                 Challenger Quiz Battle Platform
@@ -30,7 +30,7 @@ const FeaturedProduct = () => {
               <div className="space-y-3 mb-6">
                 {features.map((f) => (
                   <div key={f.text} className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <f.icon size={16} className="text-primary" />
                     </div>
                     <span className="text-sm text-foreground">{f.text}</span>
@@ -38,20 +38,20 @@ const FeaturedProduct = () => {
                 ))}
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="gradient">Try Live Platform</Button>
                 <Button variant="outline-glow">View Project</Button>
               </div>
             </div>
           </ScrollReveal>
 
-          <ScrollReveal direction="right" delay={0.2}>
+          <ScrollReveal direction="right" delay={0.2} className="flex-1">
             <div className="relative flex justify-center lg:justify-end">
               <div className="absolute -inset-8 bg-gradient-to-br from-primary/10 to-accent/5 blur-[60px] rounded-full" />
               <img
                 src={challengerMockup}
                 alt="Challenger Quiz Battle Platform mockup"
-                className="relative rounded-2xl max-w-sm lg:max-w-md w-full object-contain animate-float"
+                className="relative rounded-2xl max-w-[200px] md:max-w-[260px] lg:max-w-md w-full object-contain animate-float"
               />
             </div>
           </ScrollReveal>
