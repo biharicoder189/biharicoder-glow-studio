@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Zap, Trophy, BookOpen, Gamepad2 } from "lucide-react";
 import challengerMockup from "@/assets/challenger-mockup.png";
+import { ScrollReveal } from "./ScrollReveal";
 
 const features = [
   { icon: Zap, text: "Real-time quiz battles" },
