@@ -1,6 +1,5 @@
 import { Monitor, Bot, Server, Workflow } from "lucide-react";
-
-const solutions = [
+import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
   {
     icon: Monitor,
     title: "High Performance Websites",
