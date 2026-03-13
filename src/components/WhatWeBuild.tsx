@@ -1,4 +1,5 @@
 import { Globe, Brain, Layers, Cog } from "lucide-react";
+import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 
 const services = [
   {
