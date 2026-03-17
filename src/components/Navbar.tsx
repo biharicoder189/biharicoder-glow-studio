@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
   { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Resume", href: "/Sahil_Cv.pdf", external: true },
 ];
 
 const Navbar = () => {
@@ -27,6 +27,7 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
               {link.label}
@@ -56,6 +57,7 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="block py-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileOpen(false)}
             >
