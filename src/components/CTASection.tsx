@@ -43,7 +43,7 @@ const CTASection = () => {
                   size="lg"
                   className="text-base px-10 bg-background/80 hover:bg-background border-foreground/20"
                 >
-                  Start Your Project
+                  Get in Touch
                 </Button>
               </motion.div>
             </div>
