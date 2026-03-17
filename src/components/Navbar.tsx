@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Button variant="gradient" size="sm">
-            Start a Project
+            Get in Touch
           </Button>
         </div>
 
