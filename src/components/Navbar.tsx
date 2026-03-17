@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
   { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Resume", href: "/Sahil_Cv.pdf", external: true },
 ];
 
 const Navbar = () => {
