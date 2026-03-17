@@ -48,7 +48,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <Button variant="gradient" size="lg" className="text-base px-8">
-            Start a Project
+            Get in Touch
           </Button>
           <Button variant="outline-glow" size="lg" className="text-base px-8">
             Try Challenger
